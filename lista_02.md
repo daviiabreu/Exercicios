@@ -339,17 +339,25 @@ ______
 **10)** Uma matriz é uma coleção bidimensional de elementos, organizados em linhas e colunas. A seguir, é fornecida a implementação da função SomaDeMatrizes(matrizA, matrizB), que calcula a soma de duas matrizes. Sua tarefa é implementar uma função semelhante, porém que realize a multiplicação de duas matrizes.
 
 ```
-Função MultiplicacaoDeMatrizes(matrizA, matrizB):
+Função MultiplicacaoDeMatrizes(matrizA, matrizB, linhas, colunas, i):
     # Verifica se o número de colunas da matrizA seja igual ao número de linhas da matrizB
 
     Se linhas(matrizA) ≠ colunas(matrizB) então:
-        Retornar "As matrizes não podem ser multiplicadas. Elas têm o número de linhas diferente do número de colunas da outra."
-    Senão:
-        
+        Retornar "As matrizes não podem ser multiplicadas. Elas têm o número de linhas de uma diferente do número de colunas da outra."
+    
+    Para m de 0 até linhas(matrizA) e m++
+        resultado m = 0
 
-        Retornar matrizResultado
+        Para p de 0 até colunas(matrizB) e p++
+            somatório = 0 
 
-matrizResultado <- MultiplicacaoDeMatrizes(matrizA, matrizB)
+            Para n de 0 até colunas(matrizA) e n++
+                somatório += matrizA[m][n] * matrizB[n][p]
+
+        matrizResultado[m][p] = somatório
+
+    Retornar matrizResultado
+
 Escrever("Multiplicacao das matrizes:")
 ImprimirMatriz(matrizResultado)
 ```
