@@ -40,9 +40,11 @@ console.log("A soma dos números é:", soma);
 ```
 Qual das seguintes alternativas melhor descreve o que o código faz?
 
+R: letra B
+
 A) O código avalia a expressão booleana, imprime o resultado `false`, calcula a soma dos números de 1 a 5 e imprime o resultado no console.
 
-B) O código avalia a expressão booleana, imprime o resultado `true`, calcula a soma dos números de 1 a 5 e imprime o resultado no console.
+XB) O código avalia a expressão booleana, imprime o resultado `true`, calcula a soma dos números de 1 a 5 e imprime o resultado no console.
 
 C) O código avalia a expressão booleana, imprime o resultado `true` e verifica se o número 5 está presente na lista de números.
 
@@ -53,11 +55,13 @@ ______
 
 **2)** Analise as funções calcularOrcamento() e calcularOrcamento2(). Num cenário em que a lista gastos fosse incializada como var gastos = [3600, 950, 620, 38] em ambas funções.
 
+R: letra B
+
 ```javascript
 //Versão 1 da função que calcula orçamento
 function calculaOrcamento(){
 
-    var gastos = [1800, 950, 620, 38];
+    var gastos = [3600, 950, 620, 38];
     var totalGastos = gastos[0];
     var salario = 3500;
     var saldo = 0; 
@@ -82,7 +86,7 @@ function calculaOrcamento(){
 //Versão 2 da função que calcula orçamento
 function calculaOrcamento2(){
 
-    var gastos = [1800, 950, 620, 38];
+    var gastos = [3600, 950, 620, 38];
     var totalGastos = gastos[0];
     var salario = 3500;
     var statusSaldo =  'positivo';
@@ -106,7 +110,7 @@ Escolha a opção que responde corretamente qual seria a saída após a execuç�
 
 A) As funções calcularOrcamento() e calcularOrcamento2() teriam a mesma saída: 'Seu saldo é negativo de -1050.'
 
-B) A saída de calcularOrcamento() seria: 'Seu saldo é negativo de -1050.' e a de calcularOrcamento2() seria: 'Seu saldo é negativo de -100.'
+XB) A saída de calcularOrcamento() seria: 'Seu saldo é negativo de -1050.' e a de calcularOrcamento2() seria: 'Seu saldo é negativo de -100.'
 
 C) A saída de calcularOrcamento() seria: 'Seu saldo é negativo de -100.' e a de calcularOrcamento2() seria: 'Seu saldo é negativo de -1050.'
 
@@ -130,6 +134,8 @@ if (numero % 2 === 0) {
 
  Qual das seguintes alternativas é a descrição mais precisa do que o código faz?
 
+ R: Letra D
+
 
 A) O código verifica se o número é divisível por 3 e, se for, exibe a mensagem "O número é divisível por 3!".
 
@@ -137,7 +143,7 @@ B) O código verifica se o número é par ou ímpar. Se for par, exibe a mensage
 
 C) O código verifica se o número é par, ímpar ou divisível por 3. Se for par, exibe a mensagem "O número é par!". Se for divisível por 3, exibe a mensagem "O número é divisível por 3!". Se for ímpar, exibe a mensagem "O número é ímpar e não é divisível por 3!".
 
-D) O código verifica se o número é par, se é divisível por 3 ou se é ímpar. Se for par, exibe a mensagem "O número é par!". Se for divisível por 3 (e não for par), exibe a mensagem "O número é divisível por 3!". Se for ímpar (e não for divisível por 3), exibe a mensagem "O número é ímpar e não é divisível por 3!".
+XD) O código verifica se o número é par, se é divisível por 3 ou se é ímpar. Se for par, exibe a mensagem "O número é par!". Se for divisível por 3 (e não for par), exibe a mensagem "O número é divisível por 3!". Se for ímpar (e não for divisível por 3), exibe a mensagem "O número é ímpar e não é divisível por 3!".
 
 
 ______
@@ -166,6 +172,7 @@ for (var i = 0; i < valorCompras.length; i++) {
 ```
 
 Escolha a opção que responde corretamente:
+R: Letra D
 
 A)
 Compra 1 aprovada. Saldo restante: 800
@@ -201,7 +208,7 @@ Compra 3 aprovada. Saldo restante: 400
 Compra 4 negada. Saldo insuficiente e limite de crédito excedido.
 
 
-D)
+XD)
 
 Compra 1 aprovada. Saldo restante: 800
 
@@ -219,9 +226,11 @@ ______
 
 Escolha a opção que responde corretamente:
 
+R: Letra B
+
 A) Setup -> Update -> Draw
 
-B) Preload -> Create -> Update
+XB) Preload -> Create -> Update
 
 C) Load -> Initialize -> Render
 
@@ -232,9 +241,11 @@ ______
 
 Escolha a opção que responde corretamente:
 
+R: Letra B
+
 A) Renderizar gráficos 3D para jogos em HTML5.
 
-B) Simular interações físicas realistas, como colisões e movimentos, em jogos 2D.
+XB) Simular interações físicas realistas, como colisões e movimentos, em jogos 2D.
 
 C) Criar efeitos de áudio para melhorar a experiência do usuário em jogos.
 
@@ -246,6 +257,21 @@ ______
 
 **7)** Implemente o pseudocódigo para o algoritmo representado no fluxograma da imagem.
 ![Uma imagem](assets/image.png)
+
+```
+//Pergunta a idade ao usuário
+var idade = prompt ("Qual é a sua idade?");
+if (idade < 16) {                  //se idade for maior que 16
+    alert("Você não pode votar!"); //alerta que não pode votar
+}
+else if (idade < 18 || idade > 65) { //se idade menor de 18 ou maior de 65
+    alert("Seu voto é opcional!");   //alerta que o voto é opcional
+}
+else {                                //em outros casos ( 18 < idade <65)
+    alert("Seu voto é obrigatório!"); //alerta que o voto é obrigatório
+}
+
+```
 ______
 
 **8)** Considere a implementação da classe base FormaGeometrica em um sistema de modelagem de formas geométricas. Sua tarefa é implementar, utilizando pseudocódigo, as classes derivadas Retangulo e Circulo, que herdam da classe FormaGeometrica, adicionando atributos específicos e métodos para calcular a área de um retângulo e de um círculo, respectivamente.
@@ -261,6 +287,27 @@ Classe FormaGeometrica:
     Método CalcularArea():
         # Implementação genérica para cálculo de área, a ser sobrescrita pelas subclasses.
 
+Classe Circulo extende Classe FormaGeometrica
+    Atributos:
+        -raio
+
+    Método Construtor(cor, raio)
+    Super(cor) 
+
+    Método CalcularArea():
+        (Pi * r^2) / 2
+
+Classe Retangulo extende Classe FormaGeometrica
+    Atributos:
+        -base
+        -altura
+
+    Método Construtor(cor, base, altura)
+    Super(cor) 
+
+    Método CalcularArea():
+        base * altura
+
 ```
 
 ______
@@ -269,7 +316,22 @@ ______
 
 Considere a fórumla de atualização velocidade:
 ```
-    velocidade = velocidadeInicial + aceleracao*tempo
+Funcao simuladorDeCorrida(distanciaVolta, velocidade, velocidadeInicial, tempo, tempoMaximo, velocidadeMaxima, aceleracaoMaxima, aceleracao)
+    velocidadeMaxima = velocidadeInicial + aceleracaoMaxima*tempo
+    tempo = 0
+
+    While distanciaVolta > 0 && tempo <= tempoMaximo && velocidade < velocidadeMaxima
+        velocidade = velocidadeInicial + aceleracao*tempo
+        tempo += 1
+        distanciaVolta -= velocidade
+
+    Se velocidade >= velocidadeMaxima
+        Return "O carro excedeu a velocidade."
+
+    Se distanciaVolta <= 0 
+        Return "Seu tempo foi:" + tempo
+    Se não
+        Return "O carro excedeu o tempo, ele está muito lento."
 ```
 
 ______
@@ -277,27 +339,17 @@ ______
 **10)** Uma matriz é uma coleção bidimensional de elementos, organizados em linhas e colunas. A seguir, é fornecida a implementação da função SomaDeMatrizes(matrizA, matrizB), que calcula a soma de duas matrizes. Sua tarefa é implementar uma função semelhante, porém que realize a multiplicação de duas matrizes.
 
 ```
-Função SomaDeMatrizes(matrizA, matrizB):
-    # Verifica se as duas matrizes têm o mesmo número de linhas e colunas
-    Se tamanho(matrizA) ≠ tamanho(matrizB) então:
-        Retornar "As matrizes não podem ser somadas. Elas têm dimensões diferentes."
-    Senão:
-        linhas <- tamanho(matrizA)
-        colunas <- tamanho(matrizA[0]) # Considerando que todas as linhas têm o mesmo número de colunas
-        matrizResultado <- novaMatriz(linhas, colunas)
+Função MultiplicacaoDeMatrizes(matrizA, matrizB):
+    # Verifica se o número de colunas da matrizA seja igual ao número de linhas da matrizB
 
-        # Loop para percorrer cada elemento das matrizes e calcular a soma
-        Para i de 0 até linhas-1 faça:
-            Para j de 0 até colunas-1 faça:
-                matrizResultado[i][j] <- matrizA[i][j] + matrizB[i][j]
+    Se linhas(matrizA) ≠ colunas(matrizB) então:
+        Retornar "As matrizes não podem ser multiplicadas. Elas têm o número de linhas diferente do número de colunas da outra."
+    Senão:
+        
 
         Retornar matrizResultado
 
-# Exemplo de uso da função
-matrizA <- [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-matrizB <- [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
-
-matrizSoma <- SomaDeMatrizes(matrizA, matrizB)
-Escrever("Soma das matrizes:")
-ImprimirMatriz(matrizSoma)
+matrizResultado <- MultiplicacaoDeMatrizes(matrizA, matrizB)
+Escrever("Multiplicacao das matrizes:")
+ImprimirMatriz(matrizResultado)
 ```
